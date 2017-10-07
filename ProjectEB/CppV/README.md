@@ -1,3 +1,3 @@
-# ProjectEB - C
+# ProjectEB - C++
 
-C Version of the project.
+C++ Version of the project.
