@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Project ACD</string>
+    <string name="title_activity_command_input">CommandInputActivity</string>
+</resources>

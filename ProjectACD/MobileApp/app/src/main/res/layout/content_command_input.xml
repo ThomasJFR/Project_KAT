@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.acd.kat.projectacd.CommandInputActivity"
+    tools:showIn="@layout/command_input"
+    android:weightSum="1">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".12"/>
+
+    <ToggleButton
+        android:id="@+id/OMW"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".25"
+        android:text="OMW" />
+
+    <ToggleButton
+        android:id="@+id/S.O.S."
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".25"
+        android:text="S.O.S." />
+
+    <ToggleButton
+        android:id="@+id/SAFE"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".25"
+        android:text="SAFE" />
+
+</LinearLayout>
