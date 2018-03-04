@@ -39,9 +39,15 @@ public class ProjectACD{
 	
 	public static void doSomething(Runtime rt, String msg_received) throws IOException{
 		switch(msg_received){
-	    	case "tree":
-	    		rt.exec( "cmd.exe /c tree" );	
+	    	case "sos":
+	    		rt.exec("cmd.exe /c echo Save Our Server!" );	
 				break;
+	    	case "omw":
+	    		rt.exec("cmd.exe /c echo On My Way!");
+	    		break;
+	    	case "safe":
+	    		rt.exec("cmd.exe /c echo iiiiiiim SAFE!");
+	    		break;
 			default:
 				System.err.println("What 2 heck");
 		}
