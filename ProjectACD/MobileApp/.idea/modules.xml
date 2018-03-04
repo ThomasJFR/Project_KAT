@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ProjectACD.iml" filepath="$PROJECT_DIR$/ProjectACD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MobileApp.iml" filepath="$PROJECT_DIR$/MobileApp.iml" />
+      <module fileurl="file://C:\Users\kevin\Documents\Git\Project_KAT\ProjectACD\MobileApp\ProjectACD.iml" filepath="C:\Users\kevin\Documents\Git\Project_KAT\ProjectACD\MobileApp\ProjectACD.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\kevin\Documents\Git\Project_KAT\ProjectACD\MobileApp\app\app.iml" filepath="C:\Users\kevin\Documents\Git\Project_KAT\ProjectACD\MobileApp\app\app.iml" />
     </modules>
   </component>
 </project>
