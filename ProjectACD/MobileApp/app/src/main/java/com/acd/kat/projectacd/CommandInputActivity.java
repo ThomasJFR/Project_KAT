@@ -54,14 +54,17 @@ public class CommandInputActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {//permission for internet
                 Intent intent = new Intent(CommandInputActivity.this.getApplicationContext(), CommandInputService.class);
-                intent.putExtra("command value", "SOS");
+                intent.putExtra("Command", "SOS");
                 CommandInputActivity.this.startService(intent);
 
+                sos.setChecked(false);
+                omw.setChecked(false);
+                safe.setChecked(false);
             }
         });
-        sos = (ToggleButton)findViewById(R.id.S_O_S_);
-        omw = (ToggleButton)findViewById(R.id.OMW);
-        safe = (ToggleButton)findViewById(R.id.SAFE);
+        sos = findViewById(R.id.S_O_S_);
+        omw = findViewById(R.id.OMW);
+        safe = findViewById(R.id.SAFE);
 
         sos.setOnClickListener(toggleButton);
         omw.setOnClickListener(toggleButton);

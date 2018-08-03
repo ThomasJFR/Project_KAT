@@ -24,18 +24,24 @@ public class CommandInputService extends IntentService {
     protected void onHandleIntent(Intent intent) {
         if (intent != null) {
             Log.e("SERVICE STARTED", "Yeet");
-//            final String action = intent.getAction();
-            sendSocketMessage();
+            final String command = intent.getStringExtra("Command");
+            sendSocketMessage(command);
         }
     }
 
-    private void sendSocketMessage() {
+    private void sendSocketMessage(String command) {
         try {
-            Log.e("SOCKET MESSAGE STARTED", "Yeet");
-            Socket socket = new Socket("192.168.1.78", 6364); //sort this command into another class, as main file is lagging. *along w/other commands
+            Log.e("CREATING SOCKET", command);
+            Socket socket = new Socket("10.38.120.108", 6364);
+            socket.connect(null);
+            Log.e("DOS CREATED", command);
             DataOutputStream DOS = new DataOutputStream(socket.getOutputStream());
-            DOS.writeUTF("SOS");
+            Log.e("DOS STARTED", command);
+            DOS.writeUTF(command);
+            Log.e("DOS ENDED", command);
             socket.close();
+            Log.e("SOCKET CLOSED", command);
+
         }
         catch(IOException e){
             e.printStackTrace();
